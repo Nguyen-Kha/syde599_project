@@ -29,9 +29,9 @@ for file in glob.glob('*.txt'):
         val.append(file)
 
 path_train_test_val = 'C:\\Users\\Kha\\Documents\\Waterloo\\4A\\SYDE 599\\Project\\cleaned_data\\without_header_train_test_val'
-train_file = path_train_test_val + '\\train.txt'
-test_file = path_train_test_val + '\\test.txt'
-val_file = path_train_test_val + '\\val.txt'
+train_file = os.path.join(path_train_test_val,'train.txt')
+test_file = os.path.join(path_train_test_val,'test.txt')
+val_file = os.path.join(path_train_test_val,'val.txt')
 # os.mkdir('C:\\Users\\Kha\\Documents\\Waterloo\\4A\\SYDE 599\\Project\\cleaned_data\\without_header_train_test_val')
 
 start = datetime.now()
